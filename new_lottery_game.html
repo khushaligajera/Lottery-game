@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery game</title>
+    <link rel="stylesheet" href="/new_lottery_game/new_lottery_game.css">
+</head>
+
+<body>
+    <div class="intro">
+    <h1>CHOOSE NUMBERS</h1>
+    <div class="buttons">
+    <button class="users_btn" id="userA_btn"
+        onclick="usersFunction(grandParent_div,parent_div,child_div,`userA_balance`,`user_A`,h3,`user A`,selected_num_arr,childDiv_span,parentDiv_span, 1,spanA)">USER
+        A</button>
+    <button class="users_btn" id="userB_btn" onclick="usersFunction(grandParent_div,parent_div_2,child_div_2,`userB_balance`,`user_B`,h3_2,`user B`,selected_num_arr_2,childDiv_span_2
+,parentDiv_span_2,2,spanB)">USER B</button>
+    <button class="users_btn" id="userC_btn" onclick="usersFunction(grandParent_div,parent_div_3,child_div_3,`userC_balance`,`user_C`,h3_3,`user C`,selected_num_arr_3,childDiv_span_3
+    ,parentDiv_span_3,3,spanC)">USER C</button>
+    <button class="users_btn" id="userD_btn" onclick="usersFunction(grandParent_div,parent_div_4,child_div_4,`userD_balance`,`user_D`,h3_4,`user D`,selected_num_arr_4,childDiv_span_4
+    ,parentDiv_span_4,4,spanD)">USER D</button>
+
+    </div>
+    </div>
+    <div id="container">
+        <div class="num_container">
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="numbers">4</div>
+            <div class="numbers">5</div>
+            <div class="numbers">6</div>
+            <div class="numbers">7</div>
+            <div class="numbers">8</div>
+            <div class="numbers">9</div>
+            <div class="numbers">10</div>
+            <div class="numbers">11</div>
+            <div class="numbers">12</div>
+            <div class="numbers">13</div>
+            <div class="numbers">14</div>
+            <div class="numbers">15</div>
+            <div class="numbers">16</div>
+            <div class="numbers">17</div>
+            <div class="numbers">18</div>
+            <div class="numbers">19</div>
+            <div class="numbers">20</div>
+            <div class="numbers">21</div>
+            <div class="numbers">22</div>
+            <div class="numbers">23</div>
+            <div class="numbers">24</div>
+            <div class="numbers">25</div>
+            <div class="numbers">26</div>
+            <div class="numbers">27</div>
+            <div class="numbers">28</div>
+            <div class="numbers">29</div>
+            <div class="numbers">30</div>
+            <div class="numbers">31</div>
+            <div class="numbers">32</div>
+            <div class="numbers">33</div>
+            <div class="numbers">34</div>
+            <div class="numbers">35</div>
+            <div class="numbers">36</div>
+            <div class="numbers">37</div>
+            <div class="numbers">38</div>
+            <div class="numbers">39</div>
+            <div class="numbers">40</div>
+            <div class="numbers">51</div>
+            <div class="numbers">52</div>
+            <div class="numbers">53</div>
+            <div class="numbers">54</div>
+            <div class="numbers">55</div>
+            <div class="numbers">56</div>
+            <div class="numbers">57</div>
+            <div class="numbers">58</div>
+            <div class="numbers">59</div>
+            <div class="numbers">60</div>
+        </div>
+        </div>
+
+        
+    <!-----     <div class="user_container">
+            <div class="users" id="user_A">
+                <h3>selected numbers by user A </h3>
+                <span class="balances" id="userA_balance">&#8377;=0</span>
+                <div class="selected_num" id="selectedNum_a">
+                   
+                    <span class="selected">34</span>
+                    <span class="selected">35</span>
+                </div>
+            </div> 
+
+
+        <div class="users" id="user_B"><h3>selected numbers by user B </h3>
+                <span class="balances" id="userB_balance">&#8377;=0</span>
+                <div class="selected_num" id="selectedNum_b">
+                    <span class="selected">34</span>
+                    <span class="selected">35</span>
+                </div>
+            </div>
+
+
+
+            <div class="users" id="user_C"><h3>selected numbers by user C </h3>
+                <span class="balances" id="userC_balance">&#8377;=0</span>
+                <div class="selected_num" id="selectedNum_c">
+                    <span class="selected">34</span>
+                    <span class="selected">35</span>
+                </div>
+            </div>
+
+
+            <div class="users" id="user_D"><h3>selected numbers by user D </h3>
+                <span class="balances" id="userD_balance">&#8377;=0</span>
+                <div class="selected_num" id="selectedNum_d">
+                    <span class="selected">34</span>
+                    <span class="selected">35</span>
+                </div>
+            </div>
+        </div>  
+
+    </div>-->
+    <div id="drawn_button"><button class="drawn" id="drawn">DRAWN</button></div>
+    <div class="frontPage" id="frontPage">
+        <div id="number" class="frontPage"></div>  
+        <div id="winner" class="frontPage"></div>
+       <button class="redrawn_btn" id="redrawn_btn">REDRAWN</button>
+           
+        
+      
+      
+
+    </div>
+   
+    <script src="/new_lottery_game/new_lottery_game.js"></script>
+</body>
+
+</html>
