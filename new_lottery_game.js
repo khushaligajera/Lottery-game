@@ -136,8 +136,6 @@ function usersFunction(grandParentDiv, parentDiv, childDiv, balance, userId, hea
         func_C = 0;
         func_D = 0;
         parentDivSpan.innerHTML = `&#8377;=${rupeeA}`
-
-        console.log("🅰");
     }
     if (func_user == 2) {
         func_B = 1
@@ -145,7 +143,6 @@ function usersFunction(grandParentDiv, parentDiv, childDiv, balance, userId, hea
         // func_B=0;
         func_C = 0;
         func_D = 0;
-        console.log("🅱");
         parentDivSpan.innerHTML = `&#8377;=${rupeeB}`
 
     }
@@ -155,7 +152,6 @@ function usersFunction(grandParentDiv, parentDiv, childDiv, balance, userId, hea
         func_B = 0;
         // func_C=0;
         func_D = 0;
-        console.log("🆑");
         parentDivSpan.innerHTML = `&#8377;=${rupeeC}`
 
     }
@@ -164,7 +160,6 @@ function usersFunction(grandParentDiv, parentDiv, childDiv, balance, userId, hea
         func_A = 0
         func_B = 0;
         func_C = 0;
-        console.log("💓");
         parentDivSpan.innerHTML = `&#8377;=${rupeeD}`
         // func_D=0;
 
@@ -179,9 +174,6 @@ function usersFunction(grandParentDiv, parentDiv, childDiv, balance, userId, hea
 // console.log("come inside");
 array_num.forEach(number => {
     number.addEventListener("click", function user_func(event) {
-        console.log('cvbnaaaaaaaaaaaaaaaaaaa');
-        console.log(func_A);
-        console.log(func_B);
         if (func_A == 1) {
             handleNumber(event, grandParent_div, parent_div, child_div, `userA_balance`, "user_A", h3, `user A`, selected_num_arr, childDiv_span, parentDiv_span, "selectedNum_a", spanA)
             // func_A = 0;
@@ -201,11 +193,10 @@ array_num.forEach(number => {
 
 
 
-// console.log("come inside");
 array_num.forEach(number => {
     number.addEventListener("click", function user_func(event) {
         if (func_B == 1) {
-            console.log("bbbbbbbbbbbbbbbb");
+    
             handleNumber(event, grandParent_div, parent_div_2, child_div_2, `userB_balance`, `user_B`, h3_2, `user B`, selected_num_arr_2, childDiv_span_2
                 , parentDiv_span_2, "selectedNum_b", spanB)
             // func_B = 0;
@@ -254,37 +245,7 @@ array_num.forEach(number => {
 })
 
 function handleNumber(event, grandParentDiv, parentDiv, childDiv, balance, userId, heading, userName, numberArr, childDivSpan, parentDivSpan, selectednumber, span) {
-    console.log(event);
-    // d(grandParentDiv)
-    // childDivSpan = document.createElement("span")
-    // grandParentDiv.appendChild(parentDiv)
-    // grandParentDiv.classList.add("user_container")
-    // parentDiv.classList.add("users")
-    // parentDiv.setAttribute("id", userId);
-
-    // parentDiv.appendChild(h3)
-    // parentDiv.appendChild(parentDivSpan)
-    // parentDiv.appendChild(childDiv)
-    // parentDivSpan.classList.add("balances")
-    // parentDivSpan.innerHTML=`&#8377;=0`
-    // parentDivSpan.setAttribute("id", balance)
-
-    // heading.innerHTML = `selected numbers by ${userName}`
-
-    // // console.log("clicked");
-
-    console.log("clicked one");
-    console.log(childDiv);
-    console.log(childDiv.children.length);
-
-    // var spanD=document.getElementById("selectedNum_d")
-
-
-    //   while (span.firstChild) {
-    //     span.removeChild(span.lastChild);
-    //   }
-
-    
+  
     if (childDiv.children.length > 7) {
         console.log("come");
     }
@@ -339,10 +300,6 @@ function handleNumber(event, grandParentDiv, parentDiv, childDiv, balance, userI
 drawn_btn.addEventListener("click", () => {
     console.log("click");
     frontPage.style.display = "block"
-    console.log(selected_num_arr);
-    console.log(selected_num_arr_2);
-    console.log(selected_num_arr_3);
-    console.log(selected_num_arr_4);
     totalrestnum = selected_num_arr.concat(selected_num_arr_2, selected_num_arr_3, selected_num_arr_4)
     console.log(totalrestnum);
     console.log(totalrestnum.length);
@@ -365,21 +322,20 @@ drawn_btn.addEventListener("click", () => {
         winner.innerHTML = `THE WINNER IS USER A`
         rupeeA += total_invest;
         console.log(rupeeA);
-        console.log("aaaaaaaaaaaaa");
     }
 
     if (selected_num_arr_2.includes(totalrestnum[randomdraw])) {
         winner.innerHTML = `THE WINNER IS USER B`
         rupeeB += total_invest;
         console.log(rupeeB);
-        console.log("bbbbbbbbbbbbb");
+
     }
 
     if (selected_num_arr_3.includes(totalrestnum[randomdraw])) {
         winner.innerHTML = `THE WINNER IS USER C`
         rupeeC += total_invest;
         console.log(rupeeC);
-        console.log("ccccccccccc");
+        
     }
 
 
@@ -387,7 +343,7 @@ drawn_btn.addEventListener("click", () => {
         winner.innerHTML = `THE WINNER IS USER D`
         rupeeD += total_invest;
         console.log(rupeeD);
-        console.log("ddddddddddddddddd");
+       
     }
 
     // console.log(restRupeeD)
@@ -443,24 +399,6 @@ console.log(spanA);
            number.classList.remove("color")
       }
     })
-    //   while (remove_A.firstChild) {
-    //     remove_A.removeChild(remove_A.firstChild);
-    //   }
-    //         console.log(removelist);
-    // //    removelist.innerHTML=""
-
-    //         console.log("vhbjhvdfgcv");
-    //         console.log(removelist);
-    // var child = removelist.lastElementChild;
-    // console.log(child);
-    // console.log(removelist);
-    // // console.log(removelist.firstElementChild);
-    //  while (child) {
-    //     console.log("kjhgfghk");
-    //     removelist.removeChild(child);
-    //     child = removelist.lastElementChild;
-    //  }
-
-
+  
 })
 
